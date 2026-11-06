@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="zad9.js"></script>
+    <title>Document</title>
+    <style>
+     .zad { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+  .zad h3 { margin-top: 0; }
+  .wynik { border: 1px solid #999; min-height: 24px; padding: 4px; margin-top: 6px; background: #f9f9f9; }
+  input, button { margin: 2px; }
+    </style>
+</head>
+<body>
+<!-- 1.SUMA -->
+<div class="zad">
+    <h3>SUMA</h3>
+    <input type="number" id="suma-a"> + <input type="number" id="suma-b">
+    <button onclick="SUMA()">Oblicz</button>
+    <div class="wynik" id="suma-wynik"></div>
+  </div>
+  
+  <!-- 2.PODSTAWY -->
+  <div class="zad">
+    <h3>PODSTAWY</h3>
+    <input type="number" id="podst-a"> i <input type="number" id="podst-b">
+    <button onclick="PODSTAWY()">Oblicz</button>
+    <div class="wynik" id="podst-wynik"></div>
+  </div>
+  
+  <!-- 3.ALKULATOR -->
+  <div class="zad">
+    <h3>KALKULATOR</h3>
+    <input type="number" id="kalk-a"> <select id="kalk-op">
+      <option value="suma">suma</option>
+      <option value="różnica">różnica</option>
+      <option value="iloczyn">iloczyn</option>
+      <option value="iloraz">iloraz</option>
+    </select> <input type="number" id="kalk-b">
+    <button onclick="KALKULATOR()">Oblicz</button>
+    <div class="wynik" id="wynik"></div>
+  </div>
+  
+  <!-- 4.MAKS -->
+  <div class="zad">
+    <h3>MAKS</h3>
+    <input type="number" id="maks-a"> <input type="number" id="maks-b"> <input type="number" id="maks-c">
+    <button onclick="MAKS()">Oblicz</button>
+    <div class="wynik" id="maks-wynik"></div>
+  </div>
+  
+  <!-- 5.WZROST -->
+  <div class="zad">
+    <h3>WZROST</h3>
+    <input type="number" id="wzrost-cm"> cm
+    <button onclick="WZROST()">Klasyfikuj</button>
+    <div class="wynik" id="wzrost-wynik"></div>
+  </div>
+  
+  <!-- 6.BMI -->
+  <div class="zad">
+    <h3>BMI</h3>
+    Wzrost: <input type="number" id="bmi-wzrost"> cm, Waga: <input type="number" id="bmi-waga"> kg
+    <button onclick="BMI()">Oblicz</button>
+    <div class="wynik" id="bmi-wynik"></div>
+  </div>
+  
+  <!-- 7.STARSZY -->
+  <div class="zad">
+    <h3>STARSZY</h3>
+    <input type="date" id="urodzenie1"> vs <input type="date" id="urodzenie2">
+    <button onclick="STARSZY()">Porównaj</button>
+    <div class="wynik" id="starszy-wynik"></div>
+  </div>
+  
+  <!-- 8.PRZESTEPNY -->
+  <div class="zad">
+    <h3>PRZESTEPNY</h3>
+    <input type="number" id="rok-input">
+    <button onclick="PRZESTEPNY()">Sprawdź</button>
+    <div class="wynik" id="przestepny-wynik"></div>
+  </div>
+  
+  <!-- 9.SIŁA -->
+  <div class="zad">
+    <h3>SIŁA HASŁA</h3>
+    <input type="text" id="haslo" oninput="SIŁA()">
+    <div class="wynik" id="sila-wynik"></div>
+  </div>
+  
+  <!-- 10.TROJKAT -->
+  <div class="zad">
+    <h3>TROJKĄT</h3>
+    <input type="number" id="troj-a"> <input type="number" id="troj-b"> <input type="number" id="troj-c">
+    <button onclick="TROJKAT()">Sprawdź</button>
+    <div class="wynik" id="troj-wynik"></div>
+  </div>
+  
+  <!-- 11.SZYFR -->
+  <div class="zad">
+    <h3>SZYFR</h3>
+    <input type="text" id="szyfr-tekst" oninput="SZYFR()">
+    <span class="wynik" id="szyfr-wyj"></span>
+  </div> 
+</body>
+</html>
